@@ -1,0 +1,28 @@
+   Adaug aceasta tema fara folderul vendor.
+
+Pentru html si inserarea form-elor cu specific Laravel am instalat si am facut urmatoarele modificari:
+
+cd xampp/htdocs/blog>composer require "laravelcollective/html":"5.8.35"
+
+Apoi in /config/app.php
+
+'providers'=>[
+     ....
+     Collective\Html\HtmlServiceProvider::class,
+],
+'aliases'=>[
+     ....
+     'Form'=>Collective\Html\FormFacade::class,
+     'Html'=>Collective\Html\HtmlFacade::class,
+],
+
+
+Pentru stilizare (design) pagini am folosit Bootstrap.
+
+
+php artisan -- version
+
+php artisan list
+
+
+
